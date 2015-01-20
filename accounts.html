@@ -3,8 +3,9 @@
 </head>
 
 <body>
-
+	<div class="container">
 	{{> login}}
+	</div>
 </body>
 
 <template name="login">
@@ -35,7 +36,9 @@
 	<input type="text" id="username" placeholder="Username" />
 	<input type="password" id="password" placeholder="Password" />
 	<button id="createAccount">Create</button>
-	<p id="loginForm">(Login)</p>
+	<br>
+	<br>
+	<button id="loginForm">Login</button>
 </template>
 
 
@@ -43,5 +46,7 @@
 	<input type="text" id="username" placeholder="Username" />
 	<input type="password" id="password" placeholder="Password" />
 	<button id="login">Log In</button>
-	<p id="accountForm">(Create Account)</p>
+	<br>
+	<br>
+	<button id="accountForm">Create Account</button>
 </template>
