@@ -10,10 +10,10 @@
 
 <template name="login">
 
-	<h1>Login</h1>
+	<h2>Login</h2>
 
 	{{#if currentUser}}
-		<h2>Logged in as {{currentUser.username}}</h2>
+		<p>Logged in as {{currentUser.username}}</p>
 		<p><button id="logout">Log Out</button></p>
 	{{else}}
 		{{#if loggingIn}}
@@ -31,22 +31,28 @@
 
 
 <template name="newAccountForm">
-	<input type="text" id="email" placeholder="Email" />
-	<input type="text" id="name" placeholder="Name" />
-	<input type="text" id="username" placeholder="Username" />
-	<input type="password" id="password" placeholder="Password" />
-	<button id="createAccount">Create</button>
-	<br>
-	<br>
-	<button id="loginForm">Login</button>
+	<div id="createAccountForm">
+		<input type="text" id="email" placeholder="Email" />
+		<input type="text" id="name" placeholder="Name" />
+		<input type="text" id="username" placeholder="Username" />
+		<input type="password" id="password" placeholder="Password" />
+		<button id="createAccount">Create New Account</button>
+	</div>
+
+	<div class="formBottom">
+		<p>Go back to</p><button id="loginForm">Login</button>
+	</div>
 </template>
 
 
 <template name="loginForm">
-	<input type="text" id="username" placeholder="Username" />
-	<input type="password" id="password" placeholder="Password" />
-	<button id="login">Log In</button>
-	<br>
-	<br>
-	<button id="accountForm">Create Account</button>
+	<div id="formLogin">
+		<input type="text" id="username" placeholder="Username" />
+		<input type="password" id="password" placeholder="Password" />
+		<button id="login">Log In</button>
+	</div>
+
+	<div class="formBottom">
+		<p>Don't have an account?</p><button id="accountForm">Create Account</button>
+	</div>
 </template>

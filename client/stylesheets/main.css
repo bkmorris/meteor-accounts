@@ -1,1 +1,15 @@
-/* CSS declarations go here */
+
+#createAccountForm, #formLogin {
+	overflow: auto;
+	margin-bottom: 40px;
+}
+
+#formLogin input, #formLogin button, #createAccountForm input, #createAccountForm button{
+	float:left;
+	clear:left;
+	margin-bottom:10px;
+}
+
+.formBottom {
+	clear:left;
+}

@@ -25,7 +25,7 @@ if (Meteor.isClient) {
         profile : {
           name: t.find("#name").value
         }
-      });
+      });  
     },
 
     'click #logout': function () {
